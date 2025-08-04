@@ -14,7 +14,7 @@
       <section class="linha">
         <div class="coluna esquerda">
           <p>array = ['🍎', '🍌']</p>
-          <button onclick="executarPush()">Adicionar 🍇 com push</button>
+          <button onclick="executarPush()">Adicionar 🍇 ao final</button>
         </div>
         <div class="coluna direita">
             <p><strong>Resultado:</strong> <span id="resultado-push"></span></p>
@@ -27,7 +27,7 @@
       <section class="linha">
         <div class="coluna esquerda">
           <p>array = ['🍎', '🍌', '🍇']</p>
-          <button onclick="executarPop()">Remover último com pop</button>
+          <button onclick="executarPop()">Remover último</button>
         </div>
          <div class="coluna direita">
             <p><strong>Resultado:</strong> <span id="resultado-pop"></span></p>    
@@ -41,7 +41,7 @@
       <section class="linha">
         <div class="coluna esquerda">
           <p>array = ['🍎', '🍌', '🍇']</p>
-          <button onclick="executarShift()">Remover primeiro com shift</button>
+          <button onclick="executarShift()">Remover primeiro</button>
         </div>
          <div class="coluna direita">
             <p><strong>Resultado:</strong> <span id="resultado-shift"></span></p>
@@ -92,11 +92,13 @@
       <h2>sort 📊</h2>
       <section class="linha">
         <div class="coluna esquerda">
+          <p>array = ["Brasil", "Argentina", "Noruega", "Italia"]</p>
           <p>array = [3, 1, 4, 2]</p>
           <button onclick="executarSort()">Ordenar</button>
         </div>
          <div class="coluna direita">
-            <p><strong>Resultado:</strong> <span id="resultado-sort"></span></p>
+            <p><strong>Resultado Números:</strong> <span id="resultado-sort"></span></p>
+            <p><strong>Resultado Strings:</strong> <span id="resultado-sort2"></span></p>
          </div>      
       </section>
     </li>
@@ -119,7 +121,7 @@
       <section class="linha">
         <div class="coluna esquerda">
           <p>array = ['🍎', '🍌', '🍇']</p>
-          <button onclick="executarSplice()">Remover no índice 1</button>
+          <button onclick="executarSplice()">Remover o 2º item</button>
         </div>
          <div class="coluna direita">
             <p><strong>Resultado:</strong> <span id="resultado-splice"></span></p>
@@ -132,7 +134,7 @@
       <section class="linha">
         <div class="coluna esquerda">
           <p>array = ['🍎', '🍌', '🍇']</p>
-          <button onclick="executarIndexOf()">Índice do 🍇</button>
+          <button onclick="executarIndexOf()">Índice da🍇</button>
         </div>
          <div class="coluna direita">
             <p><strong>Resultado:</strong> <span id="resultado-indexof"></span></p>   
@@ -153,6 +155,7 @@
       </section>
     </li>
 
+    <h2> Loops de Array </h2>
     <li>
       <h2>forEach 🔁</h2>
       <section class="linha">
@@ -197,11 +200,11 @@
       <section class="linha">
         <div class="coluna esquerda">
           <p>array = ['🍎', '🍌', '🍇']</p>
-          <button onclick="executarFilter()">Filtrar 🍌</button>
+          <button onclick="executarFilter()">Filtrar 🍎</button>
         </div>
-         <div class="coluna direita">
+        <div class="coluna direita">
             <p><strong>Resultado:</strong> <span id="resultado-filter"></span></p>
-         </div>
+        </div>
       </section>
     </li>
 
@@ -210,10 +213,10 @@
       <section class="linha">
         <div class="coluna esquerda">
           <p>array = ['🍎', '🍌', '🍇']</p>
-          <button onclick="executarFind()">Achar 🍌</button>
+          <button onclick="executarFind()">Achar 🍇</button>
         </div>
         <div class="coluna direita">
-           <p><strong>Resultado:</strong> <span id="resultado-find"></span></p> 
+          <p><strong>Resultado:</strong> <span id="resultado-find"></span></p> 
         </div> 
       </section>
     </li>
@@ -226,7 +229,7 @@
           <button onclick="executarFindIndex()">Índice do 🍇</button>
         </div>
         <div class="coluna direita">
-            <p><strong>Resultado:</strong> <span id="resultado-findIndex"></span></p>
+          <p><strong>Resultado:</strong> <span id="resultado-findIndex"></span></p>
         </div>
       </section>
     </li>
@@ -271,6 +274,94 @@
     </li>
   </ol>
 
+  <h2> Desafio extra - Encadeamento</h2>
+  <h3>Filtrar jogos com a letra "e", deixar minúsculo e ordenar por nome</h3>
+  <ol>
+    <li>
+      <h2>Encadeamento de Métodos 🔗</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>
+            array = ['Zelda', 'Mario', 'Elden Ring', 'Fortnite', 'Minecraft']
+          </p>
+          <button onclick="executarEncadeamento()">Filtrar com "e", minúsculo e ordenar</button>
+        </div>
+        <div class="coluna direita">
+          <p><strong>Resultado:</strong> <span id="resultado-encadeamento"></span></p>
+        </div>
+      </section>
+    </li>
+  </ol>
+   </ol>
+
+  <h2> Testando os conhecimentos</h2>
+  <ol>
+    <li>
+      <h2>map 🗺️</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['maçã', 'banana', 'laranja']</p>
+          <button onclick="executarMap()">Adicionar '🍎' em cada fruta</button>
+        </div>
+        <div class="coluna direita">
+          <p><strong>Resultado:</strong> <span id="resultado-map-exercicio"></span></p>
+        </div>
+      </section>
+    </li>
+    <li>
+      <h2>filter 🚿</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = [10, 20, 30, 40, 50]</p>
+          <button onclick="executarFilter()">Filtrar valores maiores que 25</button>
+        </div>
+        <div class="coluna direita">
+          <p><strong>Resultado:</strong> <span id="resultado-filter-exercicio"></span></p>
+        </div>
+      </section>
+    </li>
+    <li>
+      <h2>includes 🧐</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['maçã', 'banana', 'Kiwi']</p>
+          <button onclick="executarIncludes()">Verificar se contém 'Kiwi'</button>
+        </div>
+        <div class="coluna direita">
+          <p><strong>Resultado:</strong> <span id="resultado-includes-exercicio"></span></p>
+        </div>
+      </section>
+    </li>
+    <li>
+      <h2>sort 📊</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = [4, 10, 11, 2, 25, 43]</p>
+          <button onclick="executarSort()">Ordenar em ordem decrescente</button>
+        </div>
+        <div class="coluna direita">
+          <p><strong>Resultado:</strong> <span id="resultado-sort-exercicio"></span></p>
+        </div>
+      </section>
+    </li>
+  </ol>
+
+  <h2> Super Desafio</h2>
+  <ol>
+    <li>
+      <h2>Encadeamento com limpeza e filtro 🧹</h2>
+      <h3>Limpar espaços em branco, excluir o 'kiwi' e a 'banana' e padronizar colocando todos em maiúsculo. Dica: você pode filtrar todos os elementos que NÃO são de um tipo E de outro, para excluí-lo do retorno.</h3>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['  maçã  ', 'banana', '  kiwi  ', 'laranja']</p>
+          <button onclick="executarLimpezaFiltro()">Limpar, excluir 'kiwi' e padronizar</button>
+        </div>
+        <div class="coluna direita">
+          <p><strong>Resultado:</strong> <span id="resultado-limpeza-filtro"></span></p>
+        </div>
+      </section>
+    </li>
+  </ol>
   <script src="script.js"></script>
 </body>
 </html>

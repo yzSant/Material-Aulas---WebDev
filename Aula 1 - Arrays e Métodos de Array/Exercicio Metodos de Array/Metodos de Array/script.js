@@ -24,7 +24,7 @@ function executarUnshift() {
 
 function executarIncludes() {
   const array =  ['🍎', '🍌', '🍇'];
-  const resultado = array.includes('🥝');
+  const resultado = array;
   document.getElementById('resultado-includes').textContent = resultado;
 }
 
@@ -36,8 +36,12 @@ function executarReverse() {
 
 function executarSort() {
   const array = [3, 1, 4, 2];
+  const array2 = ["Brasil", "Argentina", "Noruega", "Italia"];
+
   const resultado = array;
   document.getElementById('resultado-sort').textContent = resultado;
+  const resultado2 = array2;
+  document.getElementById('resultado-sort2').textContent = resultado2;
 }
 
 function executarSlice() {
@@ -55,22 +59,23 @@ function executarSplice() {
 
 function executarIndexOf() {
   const array = ['🍎', '🍌', '🍇'];
-  const resultado = 'Resultado da operação indexOf';
+  const resultado = array;
   document.getElementById('resultado-indexof').textContent = resultado;
 }
 
 function executarJoin() {
   const array = ['🍎', '🍌', '🍇'];
-  const resultado = 'Resultado da operação join';
+  const resultado = array;
   document.getElementById('resultado-join').textContent = resultado;
 }
+
+/* Loops de array */
 
 function executarForEach() {
   const array = ['🍎', '🍌', '🍇'];
   const resultado = 'Resultado da operação forEach';
   document.getElementById('resultado-foreach').textContent = resultado;
 }
-
 
 function executarMap() {
   const array = ['🍎', '🍌', '🍇'];
@@ -80,6 +85,8 @@ function executarMap() {
 
  function executarMapHTML() {
     const dispositivos = ['🎮', '🕹️', '💻'];
+    const resultado = 'Resultado da operação map inserindo HTML';
+    document.getElementById('resultado-map-html').innerHTML = resultado.join('<br>');
   }
 
 function executarFilter() {
@@ -116,6 +123,14 @@ function executarSome() {
   const array = ['🍎', '🍌', '🥝'];
   const resultado = 'Resultado da operação some';
   document.getElementById('resultado-some').textContent = resultado;
+}
+
+/* Encadeamento */
+
+function executarEncadeamento() {
+  const jogos = ['Zelda', 'Mario', 'Elden Ring', 'Fortnite', 'Minecraft'];
+  const resultado = 'Resultado da operação encadeada';
+  document.getElementById("resultado-encadeamento").textContent = resultado.join(', ') || 'Nenhum jogo encontrado';
 }
 
 
