@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Métodos de Array</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Explorando Métodos de Array em JavaScript</h1>
+ <ol class="lista-metodos">
+    <li>
+      <h2>push 🍇</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌']</p>
+          <button onclick="executarPush()">Adicionar 🍇 com push</button>
+        </div>
+        <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-push"></span></p>
+        </div>
+      </section>
+    </li>
+
+    <li>
+      <h2>pop 🍌</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌', '🍇']</p>
+          <button onclick="executarPop()">Remover último com pop</button>
+        </div>
+         <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-pop"></span></p>    
+         </div>
+         
+    </section>
+    </li>
+
+    <li>
+      <h2>shift 🍎</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌', '🍇']</p>
+          <button onclick="executarShift()">Remover primeiro com shift</button>
+        </div>
+         <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-shift"></span></p>
+         </div>
+      </section>
+    </li>
+
+    <li>
+      <h2>unshift 🍓</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍌', '🍇']</p>
+          <button onclick="executarUnshift()">Adicionar 🍓 no início</button>
+        </div>
+         <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-unshift"></span></p>
+         </div>
+      </section>
+    </li>
+
+    <li>
+      <h2>includes 🥝</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌', '🍇']</p>
+          <button onclick="executarIncludes()">Contém 🥝?</button>
+        </div>
+         <div class="coluna direita">
+             <p><strong>Resultado:</strong> <span id="resultado-includes" style="font-weight: bold; color: #ec0333"></span></p>
+         </div>
+      </section>
+    </li>
+
+    <li>
+      <h2>reverse 🔁</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌', '🍇']</p>
+          <button onclick="executarReverse()">Inverter ordem</button>
+        </div>
+         <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-reverse"></span></p>
+         </div>   
+      </section>
+    </li>
+
+    <li>
+      <h2>sort 📊</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = [3, 1, 4, 2]</p>
+          <button onclick="executarSort()">Ordenar</button>
+        </div>
+         <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-sort"></span></p>
+         </div>      
+      </section>
+    </li>
+
+    <li>
+      <h2>slice ✂️</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌', '🍇', '🍓']</p>
+          <button onclick="executarSlice()">Fatiar de 1 a 3</button>
+        </div>
+         <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-slice"></span></p>
+         </div>
+      </section>
+    </li>
+
+    <li>
+      <h2>splice 🧵</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌', '🍇']</p>
+          <button onclick="executarSplice()">Remover no índice 1</button>
+        </div>
+         <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-splice"></span></p>
+         </div>
+      </section>
+    </li>
+
+    <li>
+      <h2>☝️ Index Of </h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌', '🍇']</p>
+          <button onclick="executarIndexOf()">Índice do 🍇</button>
+        </div>
+         <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-indexof"></span></p>   
+         </div>
+       </section>
+    </li>
+
+    <li>
+      <h2>join 🔗</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌', '🍇']</p>
+          <button onclick="executarJoin()">Unir com ' - '</button>
+        </div>
+        <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-join"></span></p>
+        </div> 
+      </section>
+    </li>
+
+    <li>
+      <h2>forEach 🔁</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌', '🍇']</p>
+          <button onclick="executarForEach()">Mostrar cada item</button>
+        </div>
+        <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-foreach"></span></p>
+        </div>
+      </section>
+    </li>
+
+    <li>
+      <h2>map 🔍</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌', '🍇']</p>
+          <button onclick="executarMap()">Adicionar '✅'</button>
+        </div>
+         <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-map"></span></p>   
+         </div>
+       </section>
+    </li>
+
+    <li>
+      <h2>map 🗺️ (Inserindo HTML)</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🎮', '🕹️', '💻']</p>
+          <button onclick="executarMapHTML()">Mostrar</button>
+        </div>
+        <div class="coluna direita">
+          <p><strong>Resultado:</strong> <span id="resultado-map-html"></span></p>
+        </div>
+      </section>
+    </li>
+
+    <li>
+      <h2>filter 🚿</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌', '🍇']</p>
+          <button onclick="executarFilter()">Filtrar 🍌</button>
+        </div>
+         <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-filter"></span></p>
+         </div>
+      </section>
+    </li>
+
+    <li>
+      <h2>find 🔎</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌', '🍇']</p>
+          <button onclick="executarFind()">Achar 🍌</button>
+        </div>
+        <div class="coluna direita">
+           <p><strong>Resultado:</strong> <span id="resultado-find"></span></p> 
+        </div> 
+      </section>
+    </li>
+
+    <li>
+      <h2>findIndex 🔢</h2>
+      <section class="linha">
+        <div class="coluna esquerda">
+          <p>array = ['🍎', '🍌', '🍇']</p>
+          <button onclick="executarFindIndex()">Índice do 🍇</button>
+        </div>
+        <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-findIndex"></span></p>
+        </div>
+      </section>
+    </li>
+
+    <li>
+        <h2>reduce ➕</h2>
+        <section class="linha">
+            <div class="coluna esquerda">
+            <p>array = [1, 2, 3, 4]</p>
+            <button onclick="executarReduce()">Somar todos os números</button>
+            </div>
+            <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-reduce"></span></p>
+            </div>
+        </section>
+    </li>
+
+    <li>
+        <h2>every ✅</h2>
+        <section class="linha">
+            <div class="coluna esquerda">
+            <p>array = [10, 20, 30, 40]</p>
+            <button onclick="executarEvery()">Todos são maiores que 5?</button>
+            </div>
+            <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-every"></span></p>
+            </div>
+        </section>
+    </li>
+
+    <li>
+        <h2>some 🔍</h2>
+        <section class="linha">
+            <div class="coluna esquerda">
+            <p>array = ['🍎', '🍌', '🥝']</p>
+            <button onclick="executarSome()">Tem 🍌 na lista?</button>
+            </div>
+            <div class="coluna direita">
+            <p><strong>Resultado:</strong> <span id="resultado-some"></span></p>
+            </div>
+        </section>
+    </li>
+  </ol>
+
+  <script src="script.js"></script>
+</body>
+</html>
