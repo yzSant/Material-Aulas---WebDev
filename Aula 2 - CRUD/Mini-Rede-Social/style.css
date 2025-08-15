@@ -79,6 +79,9 @@ li {
 }
 #postList{
    text-align: center;
+   border:1;
+   border-color:#000;
+    border-radius:12px;
 }
 
 .card-post{
